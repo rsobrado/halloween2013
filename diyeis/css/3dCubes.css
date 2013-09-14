@@ -1,0 +1,257 @@
+/* line 1, ../sass/3dCubes.scss */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 2, ../sass/3dCubes.scss */
+.wrapper {
+  margin: 0 auto 100px auto;
+  max-width: 960px;
+}
+
+/* line 3, ../sass/3dCubes.scss */
+.stage {
+  list-style: none;
+  padding: 0;
+}
+
+/************************************* Build the scene and rotate on hover **************************************/
+/* line 5, ../sass/3dCubes.scss */
+.scene {
+  width: 260px;
+  height: 400px;
+  margin: 30px;
+  float: left;
+  -webkit-perspective: 2500px;
+  -moz-perspective: 2500px;
+  perspective: 2500px;
+}
+
+/* line 14, ../sass/3dCubes.scss */
+.movie {
+  position: relative;
+  width: 260px;
+  height: 400px;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translateZ(-130px);
+  -moz-transform: translateZ(-130px);
+  transform: translateZ(-130px);
+  -webkit-transition: -webkit-transform 350ms;
+  -moz-transition: -moz-transform 350ms;
+  transition: transform 350ms;
+  z-index: -999;
+}
+/* line 28, ../sass/3dCubes.scss */
+.movie:hover {
+  -webkit-transform: rotateY(-78deg) translateX(120px) translateY(30px) translateZ(20px);
+  -moz-transform: rotateY(-78deg) translateX(120px) translateY(30px) translateZ(20px);
+  transform: rotateY(-78deg) translateX(120px) translateY(30px) translateZ(20px);
+}
+
+/************************************* Transform and style the two planes **************************************/
+/* line 37, ../sass/3dCubes.scss */
+.movie .poster,
+.movie .info {
+  position: absolute;
+  width: 260px;
+  height: 400px;
+  background-color: black;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* line 47, ../sass/3dCubes.scss */
+.movie .poster {
+  -webkit-transform: translateZ(130px);
+  -moz-transform: translateZ(130px);
+  transform: translateZ(130px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+/* line 54, ../sass/3dCubes.scss */
+.movie .poster h1 {
+  position: absolute;
+  width: 100%;
+  background: rgba(255, 130, 0, 0.8);
+  text-shadow: 2px 2px 0 rgba(250, 190, 0, 0.8);
+  bottom: 0;
+  padding: 10px;
+  margin: 0;
+  line-height: 1;
+  color: black;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+/* line 70, ../sass/3dCubes.scss */
+.movie .info {
+  -webkit-transform: rotateY(90deg) translateZ(130px);
+  -moz-transform: rotateY(90deg) translateZ(130px);
+  transform: rotateY(90deg) translateZ(130px);
+  font-size: 0.75em;
+  position: relative;
+}
+
+/************************************* Shadow beneath the 3D object **************************************/
+/* line 81, ../sass/3dCubes.scss */
+.csstransforms3d .movie :hover::after {
+  box-shadow: 20px -5px 50px rgba(0, 0, 0, 0.3);
+}
+/* line 82, ../sass/3dCubes.scss */
+.csstransforms3d .movie ::after {
+  content: '';
+  width: 260px;
+  height: 260px;
+  position: absolute;
+  bottom: 0;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.3);
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  -webkit-transform: rotateX(90deg) translateY(130px);
+  -moz-transform: rotateX(90deg) translateY(130px);
+  transform: rotateX(90deg) translateY(130px);
+  -webkit-transition: box-shadow 350ms;
+  -moz-transition: box-shadow 350ms;
+  transition: box-shadow 350ms;
+}
+
+/************************************* Movie information **************************************/
+/* line 103, ../sass/3dCubes.scss */
+.info p {
+  padding: 1.2em 1.4em;
+  margin: 0;
+  color: rgba(250, 190, 0, 0.8);
+  line-height: 1.4;
+  border-top: 10px solid rgba(255, 130, 0, 0.8);
+  font-size: 11px;
+  text-align: justify;
+  font-weight: normal;
+}
+/* line 113, ../sass/3dCubes.scss */
+.info p a:link, .info p a:visited {
+  color: rgba(255, 130, 0, 0.8);
+}
+/* line 116, ../sass/3dCubes.scss */
+.info p a:hover {
+  color: rgba(255, 190, 0, 0.8);
+}
+/* line 121, ../sass/3dCubes.scss */
+.info header {
+  padding: 7px 10px;
+  font-weight: bold;
+  height: 195px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* line 128, ../sass/3dCubes.scss */
+.info h1 {
+  margin: 0 0 2px;
+  font-size: 1.4em;
+  color: black;
+  background: rgba(255, 130, 0, 0.8);
+  padding: 0 0 0 10px;
+  line-height: 1.5;
+  text-shadow: 1px 1px rgba(255, 190, 0, 0.6);
+  position: absolute;
+  top: 10px;
+  width: 100%;
+}
+/* line 140, ../sass/3dCubes.scss */
+.info .social {
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+}
+/* line 147, ../sass/3dCubes.scss */
+.info .social li {
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+}
+
+/************************************* Generate "lighting" using box shadows **************************************/
+/* line 157, ../sass/3dCubes.scss */
+.movie .poster,
+.movie .info,
+.movie .info header {
+  -webkit-transition: box-shadow 350ms;
+  -moz-transition: box-shadow 350ms;
+  transition: box-shadow 350ms;
+}
+
+/* line 164, ../sass/3dCubes.scss */
+.csstransforms3d .movie .poster {
+  box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0);
+}
+/* line 167, ../sass/3dCubes.scss */
+.csstransforms3d .movie:hover .poster {
+  box-shadow: inset 300px 0px 40px rgba(0, 0, 0, 0.7);
+}
+
+/* line 172, ../sass/3dCubes.scss */
+.csstransforms3d .movie .info, .csstransforms3d .movie .info header {
+  box-shadow: inset -300px 0px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* line 173, ../sass/3dCubes.scss */
+.csstransforms3d .movie:hover .info, .csstransforms3d .movie:hover .info header {
+  box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0);
+}
+
+/************************************* Posters and still images **************************************/
+/* line 177, ../sass/3dCubes.scss */
+.scene:nth-child(1) .movie .poster {
+  background-image: url(../img/abdel.gif);
+}
+/* line 178, ../sass/3dCubes.scss */
+.scene:nth-child(1) .info header {
+  background-image: url(../img/kenny.gif);
+}
+/* line 181, ../sass/3dCubes.scss */
+.scene:nth-child(2) .poster {
+  background-image: url(http://pzfullparty.com/lunatik/img/erictaylor.jpg);
+}
+/* line 182, ../sass/3dCubes.scss */
+.scene:nth-child(2) .info header {
+  background-image: url(../img/chucky.gif);
+}
+/* line 185, ../sass/3dCubes.scss */
+.scene:nth-child(3) .poster {
+  background-image: url(../img/roger.gif);
+}
+/* line 186, ../sass/3dCubes.scss */
+.scene:nth-child(3) .info header {
+  background-image: url(../img/joker.gif);
+}
+/* line 189, ../sass/3dCubes.scss */
+.scene:nth-child(4) .poster {
+  background-image: url(http://pzfullparty.com/lunatik/img/ricardo.jpg);
+}
+/* line 190, ../sass/3dCubes.scss */
+.scene:nth-child(4) .info header {
+  background-image: url(http://placekitten.com/g/310/247);
+}
+/* line 193, ../sass/3dCubes.scss */
+.scene:nth-child(5) .poster {
+  background-image: url(../img/hybris.gif);
+}
+/* line 194, ../sass/3dCubes.scss */
+.scene:nth-child(5) .info header {
+  background-image: url(../img/saw.gif);
+}
+
+/************************************* Fallback **************************************/
+/* line 198, ../sass/3dCubes.scss */
+.no-csstransforms3d .movie .poster, .no-csstransforms3d .movie .info {
+  position: relative;
+}
