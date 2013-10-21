@@ -1,0 +1,92 @@
+
+@media all and (min-width: 400px) {
+    html {font-size: 12px;}
+    .wrapper {min-height: 360px;}
+    .about .panel header:before {background-size: 66px 90px;}
+    .toggle {bottom: 12%;}
+    .prompt .panel img {width: 80px;}
+    .scene {min-height: 360px;}
+    
+    .rope{
+        &.depth-10 {
+            top: 10%; 
+            .hanger {
+                -webkit-transform: scale(0.3);
+                -moz-transform: scale(0.3);
+                transform: scale(0.3); 
+            }
+        }
+        &.depth-20 {
+            top: 6.11111%; 
+            .hanger {
+                -webkit-transform: scale(0.33333);
+                -moz-transform: scale(0.33333);
+                transform: scale(0.33333); 
+            }
+        }
+        &.depth-30 {
+            top: 2.22222%; 
+            .hanger {
+                -webkit-transform: scale(0.36667);
+                -moz-transform: scale(0.36667);
+                transform: scale(0.36667); 
+            }
+        }
+        &.depth-40 {
+            top: -1.66667%; 
+            .hanger {
+                -webkit-transform: scale(0.4);
+                -moz-transform: scale(0.4);
+                transform: scale(0.4); 
+            }
+        }
+        &.depth-50 {
+            top: -5.55556%; 
+            .hanger {
+                -webkit-transform: scale(0.43333);
+                -moz-transform: scale(0.43333);
+                transform: scale(0.43333); 
+            }
+        }
+        &.depth-60 {
+            top: -9.44444%; 
+            .hanger {
+                -webkit-transform: scale(0.46667);
+                -moz-transform: scale(0.46667);
+                transform: scale(0.46667); 
+            }
+        }
+        &.depth-70 {
+            top: -13.33333%; 
+            .hanger {
+                -webkit-transform: scale(0.5);
+                -moz-transform: scale(0.5);
+                transform: scale(0.5); 
+            }
+        }
+        &.depth-80 {
+            top: -17.22222%; 
+            .hanger {
+                -webkit-transform: scale(0.53333);
+                -moz-transform: scale(0.53333);
+                transform: scale(0.53333); 
+            }
+        }
+        &.depth-90 {
+            top: -21.11111%;
+            .hanger {
+                -webkit-transform: scale(0.56667);
+                -moz-transform: scale(0.56667);
+                transform: scale(0.56667); 
+            }
+        }
+        &.depth-100 {
+            top: -25%; 
+            .hanger {
+                -webkit-transform: scale(0.6);
+                -moz-transform: scale(0.6);
+                transform: scale(0.6); 
+            } 
+        }
+    }
+}
