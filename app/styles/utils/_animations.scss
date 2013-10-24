@@ -1,12 +1,32 @@
+.bounce-1 {
+    -webkit-animation: bounce 3s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -moz-animation: bounce 3s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation: bounce 3s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955); 
+}
+.bounce-2 {
+    -webkit-animation: bounce 4s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -moz-animation: bounce 4s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation: bounce 4s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955); 
+}
+.bounce-3 {
+    -webkit-animation: bounce 3.6s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -moz-animation: bounce 3.6s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation: bounce 3.6s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955); 
+}
+.bounce-4 {
+    -webkit-animation: bounce 3.4s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -moz-animation: bounce 3.4s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation: bounce 3.4s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955); 
+}
 .swing-1 {
     -webkit-animation: swing 4s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
     -moz-animation: swing 4s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
     animation: swing 4s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955); 
 }
 .swing-2 {
-    -webkit-animation: swing 3.5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    -moz-animation: swing 3.5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    animation: swing 3.5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955); 
+    -webkit-animation: swing 8s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -moz-animation: swing 8s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation: swing 8s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955); 
 }
 .fade-2 {
     -webkit-animation: fade 3.5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
@@ -33,21 +53,116 @@
     -moz-animation: phase 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
     animation: phase 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955); 
 }
+.phase-2 {
+    -webkit-animation: phase-shake 12s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -moz-animation: phase-shake 12s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation: phase-shake 12s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955); 
+}
 .shake-1 {
-    -webkit-animation: shake 2.7s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    -moz-animation: shake 2.7s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    animation: shake 2.7s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955); 
+    -webkit-animation: shake 6s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -moz-animation: shake 6s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation: shake 6s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955); 
 }
 .shake-2{
-    -webkit-animation: shake 3.35s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    -moz-animation: shake 3.35s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    animation: shake 3.35s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955); 
+    -webkit-animation: shake 5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -moz-animation: shake 5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation: shake 5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955); 
 }
 .shake-right {
-    -webkit-animation: shake-right 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    -moz-animation: shake-right 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    animation: shake-right 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955); 
+    -webkit-animation: shake-right 9s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -moz-animation: shake-right 9s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation: shake-right 9s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955); 
 }
+
+@-webkit-keyframes phase-shake {
+    0% { 
+        opacity: 1; 
+        -webkit-transform: translateX(100px);
+        -moz-transform: translateX(100px);
+        transform: translateX(100px);
+    }
+    25% { opacity: 0.4; }
+    50% { 
+        opacity: 0.8; 
+        -webkit-transform: translateX(50px);
+        -moz-transform: translateX(50px);
+        transform: translateX(50px);
+    }
+    75% { opacity: 0.4; }
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateX(100px);
+        -moz-transform: translateX(100px);
+        transform: translateX(100px);
+    } 
+}
+@-moz-keyframes phase-shake {
+    0% { 
+        opacity: 1; 
+        -webkit-transform: translateX(100px);
+        -moz-transform: translateX(100px);
+        transform: translateX(100px);
+    }
+    25% { opacity: 0.4; }
+    50% { 
+        opacity: 0.8; 
+        -webkit-transform: translateX(50px);
+        -moz-transform: translateX(50px);
+        transform: translateX(50px);
+    }
+    75% { opacity: 0.4; }
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateX(100px);
+        -moz-transform: translateX(100px);
+        transform: translateX(100px);
+    } 
+}
+@-ms-keyframes phase-shake {
+    0% { 
+        opacity: 1; 
+        -webkit-transform: translateX(100px);
+        -moz-transform: translateX(100px);
+        transform: translateX(100px);
+    }
+    25% { opacity: 0.4; }
+    50% { 
+        opacity: 0.8; 
+        -webkit-transform: translateX(50px);
+        -moz-transform: translateX(50px);
+        transform: translateX(50px);
+    }
+    75% { opacity: 0.4; }
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateX(100px);
+        -moz-transform: translateX(100px);
+        transform: translateX(100px);
+    } 
+}
+@keyframes phase-shake {
+    0% { 
+        opacity: 1; 
+        -webkit-transform: translateX(100px);
+        -moz-transform: translateX(100px);
+        transform: translateX(100px);
+    }
+    25% { opacity: 0.4; }
+    50% { 
+        opacity: 0.8; 
+        -webkit-transform: translateX(50px);
+        -moz-transform: translateX(50px);
+        transform: translateX(50px);
+    }
+    75% { opacity: 0.4; }
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateX(100px);
+        -moz-transform: translateX(100px);
+        transform: translateX(100px);
+    } 
+}
+
 @-webkit-keyframes phase {
     0% { opacity: 1; }
     25% { opacity: 0.4; }
