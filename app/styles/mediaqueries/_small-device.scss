@@ -1,12 +1,125 @@
-
-@media all and (min-width: 400px) {
+@media  screen and (max-width : 480px) {
     html {font-size: 12px;}
-    .wrapper {min-height: 360px;}
-    .about .panel header:before {background-size: 66px 90px;}
-    .toggle {bottom: 12%;}
-    .prompt .panel img {width: 80px;}
-    .scene {min-height: 360px;}
+    body{width: 320px;}
+    .wrapper {
+        min-height: 300px;
+        width: 320px;
+    }
+
+    .scene {
+        min-height: 300px;
+        width: 320px;
+    }
+
+    .headline{
+        height: 150px;
+    }
+
+    .title {
+        background: url(../images/skull.png) no-repeat 50% 100%;
+        background-size: 50%;
+        font-size: 3em;
+        margin-top: -0.7em;
+        position: absolute;
+        width: 100%;
+        height: 225px;
+        top: 15%; 
+    }
+
+    .forkit {
+        position: fixed;
+    }
+
+    .background {
+        background: url(../images/background.jpg) no-repeat 50% 100%;
+        bottom: 96px;
+        background-size: cover;
+        position: absolute;
+        width: 110%;
+        left: -5%;
+        top: -5%; 
+    }
+
+    .party-info {
+        text-shadow: 0 3px 2px rgba(0, 0, 0, 0.6);
+        margin: 0px -64px;
+        height: 224px;
+        width: 200px;
+        font-size: 0.8em;
+        hr{
+            max-width: 30px;
+            margin: 5px 0 10px 0;
+        }
+        &.djsRight{
+            top: 50px;
+            right: 5px; 
+        }
+        &.djsLeft{
+            top: 50px;
+            left: 70px; 
+        }
+        &.price{
+          font-family: "bahiana-regular", sans-serif;
+          left: 23%; 
+          bottom: 22%;
+          h2{
+            font-size: 2em; 
+          }
+          h3{
+            font-size: 1.5em; 
+          }
+          span{
+            font-size: 1.3em;
+          }
+        }
+
+        &.cover{
+          font-family: "bahiana-regular", sans-serif;
+          right: 2%; 
+          bottom: 13%;
+          h2{
+            font-size: 1.8em; 
+            color: #28a6da;
+            letter-spacing: 1px;
+            line-height: 1.1;
+          }
+          h3{
+            color: #dadada;
+            font-size: 1.2em; 
+            letter-spacing: 1px;
+          }
+          span{
+            font-size: 1.3em;
+          }
+        }
+        &.venue{
+            left: -20px;
+            font-size: 3em;
+            bottom: 20%;
+        }
+    }
     
+    .light {
+        &.a {
+            bottom: 144px; 
+        }
+        &.b {
+            top: 0; 
+        }
+        &.c {
+            bottom: 120px; 
+        }
+        &.d {
+            bottom: 40px; 
+        }
+        &.e {
+            bottom: 92px; 
+        }
+        &.f {
+            bottom: 128px; 
+        }
+    }
+
     .rope{
         &.depth-10 {
             top: 10%; 
@@ -87,6 +200,109 @@
                 -moz-transform: scale(0.6);
                 transform: scale(0.6); 
             } 
+        }
+    }
+
+    .wave{
+        &.depth-10 {
+            bottom: 20px;
+            margin: 0px 0px;
+            background-size: 60px auto;
+            height: 24px; 
+            &.depth-10:after {
+                height: 180px; 
+            }
+        }
+
+        &.depth-20 {
+            bottom: 100px;
+            margin: 0px 0px;
+            background-size: 100px auto;
+            height: 48px; 
+            &.depth-20:after {
+                height: 160px; 
+            }
+        }
+
+        &.depth-30 {
+            bottom: 50px;
+            margin: 0px 0px;
+            background-size: 140px auto;
+            height: 72px; 
+            &.depth-30:after {
+                height: 168px; 
+            }
+        }
+
+        &.depth-40 {
+            bottom: 80px;
+            margin: 0px 0px;
+            background-size: 180px auto;
+            height: 96px; 
+            &.depth-40:after {
+                height: 144px; 
+            }
+        }
+
+        &.depth-50 {
+            bottom: 50px;
+            margin: 0px 0px;
+            background-size: 220px auto;
+            height: 120px; 
+            &.depth-50:after {
+                height: 120px; 
+            }
+        }
+
+        &.depth-60 {
+            bottom: 20px;
+            margin: 0px 0px;
+            background-size: 200px auto;
+            height: 104px; 
+            &.depth-60:after {
+                height: 96px; 
+            }
+        }
+
+        &.depth-70 {
+            bottom: 30px;
+            margin: 0px 0px;
+            background-size: 240px auto;
+            height: 108px; 
+            &.depth-70:after {
+                height: 72px; 
+            }
+        }
+
+        &.depth-80 {
+            bottom: 0px;
+            margin: 0px 0px;
+            background-size: 220px auto;
+            height: 100px; 
+            &.depth-80:after {
+                height: 48px; 
+            }
+        }
+
+        &.depth-90 {
+            bottom: 10px;
+            margin: 0px 0px;
+            background-size: 280px auto;
+            height: 140px; 
+            &.depth-90:after {
+                height: 24px; 
+            }
+        }
+
+        &.depth-100 {
+            bottom: 0px;
+            margin: 0px 0px;
+            background-size: 300px auto;
+            height: 100px; 
+            
+            &.depth-100:after {
+                height: 0px; 
+            }
         }
     }
 }
