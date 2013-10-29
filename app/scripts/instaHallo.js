@@ -65,9 +65,10 @@ jQuery(document).ready(function () {
     }); 
     setTimeout(function(){
       var $container = jQuery('.box');
+      console.log('masonry');
       $container.masonry('reloadItems');
       $container.masonry();
-    },500)
+    },1000)
   }); 
 
   setTimeout(function(){
