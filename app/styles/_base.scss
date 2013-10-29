@@ -230,13 +230,19 @@ ul {
     .insta{
       float : left;
       .box{
-        height     : 500px;
-        width      : 600px; 
-        overflow-x : hidden; 
-        overflow-y : scroll;
+        height     : auto;
+        width      : 600px;
       }
     }
+    .loadMore{
+      cursor : pointer;  
+    }
     .mapa{
+      ul{
+        li{
+          display : inline-block; 
+        }
+      }
       float : right;
     }
   }
