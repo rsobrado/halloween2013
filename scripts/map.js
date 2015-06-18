@@ -30,7 +30,6 @@ navigator.geolocation.getCurrentPosition(function(position) {
 }
 
 function calcRoute(you) {
-  console.log(you);
   var request = {
     origin: you,
     destination: new google.maps.LatLng('9.388097','-83.641877'),

@@ -9,7 +9,6 @@ jQuery(document).ready(function () {
     url      : url,
     dataType : 'jsonp',
     success:function(instagram_data){
-      console.log(instagram_data);
       var instagram_feed = _.map(instagram_data.data,function(data_instagram){  
         var data_obj = {
           'link'      : data_instagram.link,
@@ -39,7 +38,6 @@ jQuery(document).ready(function () {
     url      : url2,
     dataType : 'jsonp',
     success:function(instagram_data){
-      console.log(instagram_data);
       var instagram_feed = _.map(instagram_data.data,function(data_instagram){  
         var data_obj = {
           'link'      : data_instagram.link,
@@ -65,7 +63,7 @@ jQuery(document).ready(function () {
     }); 
     setTimeout(function(){
       var $container = jQuery('.box');
-      console.log('masonry');
+      
       $container.masonry('reloadItems');
       $container.masonry();
     },1000)
